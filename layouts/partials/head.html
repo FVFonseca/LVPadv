@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <title>Lawfice - Law Office Website Template</title>
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>    
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -9,7 +9,6 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Fonts & Icons (External links stay the same) -->
-   <!-- Google Web Fonts: Krona One (Principal) e Montserrat (Fallback para Gotham) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
