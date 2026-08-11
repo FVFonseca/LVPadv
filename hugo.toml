@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Lima, Vieira & Picinin'
+[menu]
+  [[menu.main]]
+    identifier = "Menu"
+    name = "Menu"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "debora"
+    name = "Débora Vieira"
+    url = "/debora-vieira/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "alberto"
+    name = "Alberto Picinin"
+    url = "/alberto-picinin/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "danilo"
+    name = "Danilo Lima"
+    url = "/danilo-lima/"
+    weight = 40

@@ -1,0 +1,424 @@
+
+:root {
+    /* Cor Institucional Mostarda */
+    --bs-primary: #947B18 !important;
+    --bs-primary-rgb: 148, 123, 24 !important;
+
+    /* Cor Institucional Cinza Chumbo */
+    --bs-secondary: #141313 !important;
+    --bs-secondary-rgb: 20, 19, 19 !important;
+    
+    --bs-dark: #141313 !important;
+    --bs-dark-rgb: 20, 19, 19 !important;
+
+    /* Configuração de Tipografia */
+    --bs-font-sans-serif: 'Gotham', 'Montserrat', sans-serif !important;
+    --bs-body-font-family: 'Gotham', 'Montserrat', sans-serif !important;
+    --bs-body-color: #141313 !important;
+}
+
+/* Aplicando Krona One nos Textos Principais e Títulos */
+h1, h2, h3, h4, h5, h6, 
+.navbar-brand h2, 
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: 'Krona One', sans-serif !important;
+}
+
+/* Ajustes de contraste para botões e elementos com a cor Mostarda */
+.btn-primary, .bg-primary {
+    color: #ffffff !important; /* Mantém o texto branco sobre o fundo mostarda para legibilidade */
+}
+
+.text-primary {
+    color: #947B18 !important;
+}
+
+/* Cor do texto em fundos escuros (Cinza Chumbo) */
+.bg-dark *, .bg-secondary * {
+    color: #ffffff;
+}
+
+
+/*** Font ***/
+.ff-open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.ff-roboto-slab {
+    font-family: "Roboto Slab", serif;
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-bold {
+    font-weight: 600 !important;
+}
+
+
+/*** Button ***/
+.btn.btn-primary,
+.btn.btn-secondary {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn {
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+/*** Nav Bar ***/
+.navbar .navbar-nav .nav-link {
+    margin: 0 10px;
+    padding: 0;
+    outline: none;
+    font-size: 16px;
+    color: var(--bs-light);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary)
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item.active {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Header ***/
+.hero-header {
+    position: relative;
+}
+
+.hero-header::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: -500%;
+    left: 0;
+    bottom: 0;
+    background: var(--bs-secondary);
+    z-index: -1;
+}
+
+.header-carousel {
+    position: relative;
+    padding-right: 45px;
+}
+
+.header-carousel .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--bs-primary);
+    transition: .5s;
+}
+
+.header-carousel .owl-dot.active {
+    height: 30px;
+    background: var(--bs-primary);
+}
+
+
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1rem;
+    letter-spacing: 2px;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: var(--bs-dark);
+}
+
+.section-title.text-primary::before {
+    background: var(--bs-primary);
+}
+
+
+/*** About ***/
+.about-exp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -45px;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*** Practice ***/
+@media (max-width: 768px) {
+    .practice-item {
+        border: none !important;
+        box-shadow: 0 0 45px rgba(0, 0, 0, .06);
+    }
+}
+
+@media (min-width: 992px) {
+    .practice-item.border-lg-end {
+        border-right: 1px solid #dee2e6;
+    }
+
+    .practice-item.border-lg-end-0 {
+        border-right: none !important;
+    }
+
+    .practice-item.border-lg-bottom-0 {
+        border-bottom: none !important;
+    }
+}
+
+
+/*** Case ***/
+.case-item h1 {
+    color: var(--bs-white);
+    -webkit-text-stroke: 1px var(--bs-primary);
+    text-shadow:
+        -1px -1px 0 var(--bs-primary),
+        1px -1px 0 var(--bs-primary),
+        -1px  1px 0 var(--bs-primary),
+        1px  1px 0 var(--bs-primary);
+}
+
+
+/*** Team ***/
+.team-item .team-des {
+    position: relative;
+    height: 110px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.team-item .team-des .team-text {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*** Footer ***/
+.footer {
+    color: var(--bs-light);
+    background: var(--bs-dark);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--bs-light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--bs-primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .list-group li {
+    background: transparent;
+    border-color: rgba(255, 255, 255, .15);
+}
+
+.footer .list-group li a {
+    color: var(--bs-light);
+}
+
+.footer .list-group li a:hover {
+    color: var(--bs-primary);
+}
+
+.footer .list-group li small {
+    color: var(--bs-tertiary);
+}
+/* ============================================================
+   PREMIUM VISUAL IDENTITY: LIMA, VIEIRA & PICININ
+   Colors: Gold (#947B18), Dark Gray (#141313), White (#ffffff)
+   ============================================================ */
+
+/* Base Typography */
+body {
+    background-color: #ffffff !important;
+    color: #141313 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Krona One', sans-serif !important;
+    color: #141313 !important;
+}
+
+/* Elegant Links & Accents */
+.text-primary, a {
+    color: #947B18 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #141313 !important;
+}
+
+/* Premium Buttons */
+.btn-primary {
+    background-color: #947B18 !important;
+    border: 2px solid #947B18 !important;
+    color: #ffffff !important;
+    border-radius: 0 !important; /* Sharp corners for a serious, legal look */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff !important;
+    color: #947B18 !important;
+}
+
+/* Navbar Styling */
+.navbar-dark.bg-dark {
+    background-color: #141313 !important;
+    border-bottom: 3px solid #947B18 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-family: 'Krona One', sans-serif !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #947B18 !important;
+}
+
+/* Content Cards & Sections */
+.bg-secondary {
+    background-color: #141313 !important;
+    color: #ffffff !important;
+}
+
+.bg-secondary h1, .bg-secondary h2, .bg-secondary h3 {
+    color: #ffffff !important;
+}
+
+hr.accent-line {
+    border-top: 3px solid #947B18;
+    width: 60px;
+    opacity: 1;
+}

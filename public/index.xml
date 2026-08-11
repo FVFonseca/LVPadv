@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>_Index on Lima, Vieira &amp; Picinin</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content in _Index on Lima, Vieira &amp; Picinin</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 11 Aug 2026 00:36:47 -0300</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Meu Primeiro Artigo</title>
+				<link>http://localhost:1313/blog/meu-primeiro-artigo/</link>
+				<pubDate>Tue, 11 Aug 2026 00:36:47 -0300</pubDate>
+				<guid>http://localhost:1313/blog/meu-primeiro-artigo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Alberto Picinin</title>
+				<link>http://localhost:1313/alberto-picinin/</link>
+				<pubDate>Mon, 10 Aug 2026 21:36:04 -0300</pubDate>
+				<guid>http://localhost:1313/alberto-picinin/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Danilo Lima</title>
+				<link>http://localhost:1313/danilo-lima/</link>
+				<pubDate>Mon, 10 Aug 2026 21:36:04 -0300</pubDate>
+				<guid>http://localhost:1313/danilo-lima/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Débora Vieira</title>
+				<link>http://localhost:1313/debora-vieira/</link>
+				<pubDate>Mon, 10 Aug 2026 21:36:04 -0300</pubDate>
+				<guid>http://localhost:1313/debora-vieira/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
