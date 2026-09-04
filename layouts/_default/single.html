@@ -6,17 +6,20 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="bg-secondary text-center shadow-sm" style="border-bottom: 5px solid #947B18;">
                 
-                <!-- Imagem Exclusiva de Perfil -->
-                <div class="overflow-hidden mb-4">
+                <div class="overflow-hidden mb-0">
+                    <!-- Puxa a imagem de perfil -->
                     <img class="img-fluid w-100" 
-                         src="{{ if .Params.image_profile }}{{ .Params.image_profile | relURL }}{{ else }}https://via.placeholder.com/600x600/141313/947B18?text={{ .Title }}{{ end }}" 
+                         src="{{ if .Params.image_profile }}{{ .Params.image_profile | relURL }}{{ else }}https://via.placeholder.com/600x600/141313/947B18?text={{ .Title | urlize }}{{ end }}" 
                          alt="Foto de Perfil de {{ .Title }}"
                          style="object-fit: cover; height: 450px;">
                 </div>
 
                 <div class="p-4">
-                    <h3 class="text-white mb-0" style="font-family: 'Krona One', sans-serif; font-size: 1.5rem;">{{ .Title }}</h3>
-                    <p class="text-primary mt-2 mb-0" style="font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Sócia(o) Administradora</p>
+                    <h3 class="text-white mb-0" style="font-family: 'Krona One', sans-serif; font-size: 1.3rem;">{{ .Title }}</h3>
+                    <!-- Puxa o cargo dinamicamente -->
+                    <p class="text-primary mt-2 mb-0" style="font-weight: 600; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">
+                        {{ if .Params.role }}{{ .Params.role }}{{ else }}Sócio(a){{ end }}
+                    </p>
                     
                     {{ if .Params.email }}
                     <div class="mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
@@ -37,33 +40,53 @@
             </div>
         </div>
 
-        <!-- Coluna Direita: Biografia e Especialização -->
+        <!-- Coluna Direita: Conteúdo Dinâmico -->
         <div class="col-lg-7">
-            <!-- Sobre o Advogado -->
+            
+            <!-- Biografia (Conteúdo Markdown) -->
             <div class="mb-5">
-                <h2 class="display-6 mb-3" style="color: #141313; font-family: 'Krona One', sans-serif;">Sobre o Profissional</h2>
+                <h2 class="display-6 mb-3" style="color: #141313; font-family: 'Krona One', sans-serif;">Trajetória Profissional</h2>
                 <hr class="accent-line ms-0 mb-4" style="border-top: 3px solid #947B18; width: 60px; opacity: 1;">
-                <p class="lead" style="line-height: 1.8; color: #141313; font-family: 'Montserrat', sans-serif; font-weight: 300;">
-                    {{ .Params.about }}
-                </p>
+                <div class="lead" style="line-height: 1.8; color: #141313; font-family: 'Montserrat', sans-serif; font-weight: 300;">
+                    <!-- A biografia corrida virá aqui com muito respiro visual -->
+                    {{ .Content }}
+                </div>
             </div>
 
-            <!-- Especialização -->
-            <div class="p-5 shadow-sm" style="background-color: #f8f9fa; border-left: 5px solid #947B18;">
-                <h3 class="mb-3" style="color: #141313; font-family: 'Krona One', sans-serif; font-size: 1.3rem;">
-                    <i class="fas fa-balance-scale text-primary me-3"></i> Áreas de Especialização
+            <!-- Formação Acadêmica (Contraste Visual) -->
+            {{ if .Params.education }}
+            <div class="p-4 shadow-sm mb-5" style="background-color: #f8f9fa; border-left: 5px solid #947B18;">
+                <h3 class="mb-4" style="color: #141313; font-family: 'Krona One', sans-serif; font-size: 1.2rem;">
+                    <i class="fas fa-graduation-cap text-primary me-2"></i> Formação Acadêmica
                 </h3>
-                <p class="mb-0 fs-5" style="color: #141313; font-family: 'Montserrat', sans-serif;">
-                    {{ .Params.specialization }}
-                </p>
+                <ul class="list-unstyled mb-0" style="font-family: 'Montserrat', sans-serif; color: #141313;">
+                    {{ range .Params.education }}
+                    <li class="mb-3 d-flex align-items-start">
+                        <i class="fas fa-check text-primary mt-1 me-3"></i> 
+                        <span style="line-height: 1.6;">{{ . }}</span>
+                    </li>
+                    {{ end }}
+                </ul>
             </div>
-            
-            <!-- Restante do conteúdo em Markdown -->
-            <div class="mt-5" style="color: #141313; font-family: 'Montserrat', sans-serif; line-height: 1.8;">
-                {{ .Content }}
+            {{ end }}
+
+            <!-- Áreas de Atuação (Grid de Cards Interativos) -->
+            {{ if .Params.practice_areas }}
+            <div class="mb-5">
+                <h3 class="mb-4" style="color: #141313; font-family: 'Krona One', sans-serif; font-size: 1.2rem;">
+                    <i class="fas fa-balance-scale text-primary me-2"></i> Principais Áreas de Atuação
+                </h3>
+                <div class="d-flex flex-wrap gap-2">
+                    {{ range .Params.practice_areas }}
+                    <span class="p-3 shadow-sm" style="background-color: #ffffff; border: 1px solid #e0e0e0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; color: #141313;">
+                        {{ . }}
+                    </span>
+                    {{ end }}
+                </div>
             </div>
+            {{ end }}
             
-            <a href="{{ "/" | relURL }}" class="btn btn-outline-dark mt-5 px-5 py-3" style="border-radius: 0; font-weight: 600; letter-spacing: 1px;">
+            <a href="{{ "/" | relURL }}" class="btn btn-outline-dark mt-4 px-5 py-3" style="border-radius: 0; font-weight: 600; letter-spacing: 1px;">
                 <i class="fas fa-arrow-left me-2"></i> Retornar ao Início
             </a>
         </div>
