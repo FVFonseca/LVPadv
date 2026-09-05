@@ -1,33 +1,33 @@
 ---
-title: "Débora Vieira"
+title: "Débora Vieira Fonseca"
 date: "2026-08-10T21:36:04-03:00"
 draft: false
-role: "Responsável pela área tributária"
-specialization: "Direito a pagar imposto sla"
-email: "debora@email.com.br"
-whatsapp: "5584999999999"
+role: "Responsável pelas áreas Administrativas, Previdenciária e Tributária"
+specialization: "Direito Administrativo, Previdenciário e Tributário"
+email: "debora@lvp.com.br"
+whatsapp: "558499083838"
 image_carousel: "img/debora.jpeg"
 image_profile: "img/debora2.jpeg"
 
 education:
-  - "Pós-graduação em Direito Processual Civil pela Faculdade Damásio."
-  - "Especialização em Responsabilidade Civil e Direito Contratual pelo Verbo Jurídico."
-  - "Especialização em Advocacia Tributária pela Escola Brasileira de Direito, EBRADI, em curso."
-  - "Bacharel em Direito pela UNIFACEX."
+  - "Especialização em Direito Tributário pelo Instituto Brasileiro de Estudos Tributários (IBET)."
+  - "Especialização em Direito Previdenciário pela Universidade Anhanguera (UNIDERP)."
+  - "Bacharel em Direito pela Universidade Federal do Rio Grande do Norte (UFRN)."
+  - "Inscrição na Ordem dos Advogados do Brasil, Seccional do Rio Grande do Norte (OAB/RN), sob o nº 17.092."
 
 practice_areas:
-  - "Direito Civil e Processo Civil"
-  - "Contratos Civis e Empresariais"
-  - "Responsabilidade Civil"
-  - "Contencioso Empresarial"
-  - "Cobranças, Execuções e Cumprimento de Sentença"
-  - "Negociação e Solução de Conflitos"
-  - "Consultoria Jurídica Empresarial"
-  - "Prevenção e Mitigação de Riscos Jurídicos"
+  - "Direito Administrativo e Assessoramento a Municípios"
+  - "Direito Previdenciário (RGPS e RPPS)"
+  - "Direito Tributário (Consultoria e Contencioso)"
+  - "Licitações e Contratos Administrativos"
+  - "Defesa em Improbidade Administrativa e Tribunais de Contas"
+  - "Aposentadorias e Benefícios por Incapacidade"
 ---
 
-Advogado com vasta experiência em Direito Civil e Processo Civil, atuando de forma estratégica especialmente em contencioso cível, relações contratuais, responsabilidade civil, consultoria empresarial e prevenção de litígios.
+Advogada com atuação consolidada em Direito Público, dedicando-se especialmente ao assessoramento jurídico de Municípios desde 2021. Sua trajetória, construída dentro e ao lado da Administração Pública, proporciona uma compreensão profunda do funcionamento concreto dos órgãos públicos, orientando com precisão tanto a atuação preventiva quanto a defesa de direitos em face do Poder Público.
 
-Possui expertise consolidada na condução de demandas judiciais e extrajudiciais, bem como na elaboração e análise minuciosa de contratos, pareceres jurídicos e negociações voltadas à proteção integral dos interesses de pessoas e corporações.
+No Direito Administrativo, sua prática abrange desde a análise preventiva de editais, contratos e atos administrativos, até a defesa técnica em processos judiciais, improbidade administrativa e controle externo perante os Tribunais de Contas. Na área Tributária, atua com excelência em consultoria, planejamento e defesa estruturada em processos judiciais e administrativos.
 
-Sua trajetória profissional é marcada por uma visão ampla do direito, construída através de vivência em escritórios de advocacia, gestão autônoma e assessoria jurídica institucional. Seu foco está sempre na mitigação de riscos e na definição de soluções inteligentes para os clientes.
+No campo Previdenciário, possui expertise no amparo a servidores públicos e segurados do Regime Geral, atuando diretamente em questões relativas a benefícios, aposentadoria por idade e benefícios por incapacidade.
+
+Seu trabalho é fundamentado na análise técnica minuciosa, na comunicação transparente sobre riscos e possibilidades, e no acompanhamento próximo de cada cliente. A orientação honesta e a avaliação realista de êxito precedem qualquer medida judicial, tendo a discrição e a observância estrita dos deveres éticos como premissas absolutas em seu atendimento.

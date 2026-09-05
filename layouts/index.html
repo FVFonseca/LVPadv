@@ -62,7 +62,7 @@
     </div>
 </div>
 
- <!-- About Start -->
+ <!-- Sobre o Escritório -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
@@ -96,12 +96,14 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-4" href="">Contact Us</a>
+                    <a class="btn btn-primary py-3 px-4 mt-3 shadow" href="#contact" style="border-radius: 0; font-weight: 700; letter-spacing: 1px;">
+                        Fale Conosco
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- Sobre o Escritório End -->
 
 <!-- Practice Start -->
 <div class="container-fluid py-5" id="services" style="background-color: #ffffff;">
@@ -121,21 +123,20 @@
             <div class="col-md-6 col-lg-4">
                 <div class="practice-item bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 5px solid #947B18;">
                     <div class="text-center mb-3">
-                        <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                        <!-- Ícone customizado -->
+                        <img src="{{ "img/icone-administrativo.png" | relURL }}" alt="Direito Administrativo" style="height: 60px; width: auto; margin-bottom: 1rem;">
                         <h4 class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.1rem; color: #141313;">Direito Administrativo</h4>
                     </div>
                     <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem;">
                         Atuação preventiva e contenciosa envolvendo a Administração Pública.
                     </p>
 
-                    <!-- Conteúdo Oculto (Expande ao clicar) -->
                     <div class="collapse flex-grow-1" id="collapseAdmin">
                         <div class="pt-3 mt-2" style="border-top: 1px solid rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.85rem; line-height: 1.6; text-align: justify;">
                             Nossa equipe presta assessoria completa em licitações, análise de contratos administrativos, defesa em processos disciplinares, ações de improbidade administrativa e ações civis públicas. Garantimos a conformidade legal e a proteção dos seus interesses perante órgãos governamentais.
                         </div>
                     </div>
 
-                    <!-- Botão de Expansão -->
                     <button class="btn btn-outline-dark mt-auto w-100 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
                         Saiba Mais <i class="fas fa-plus ms-1" style="font-size: 0.7rem;"></i>
                     </button>
@@ -146,21 +147,20 @@
             <div class="col-md-6 col-lg-4">
                 <div class="practice-item bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 5px solid #947B18;">
                     <div class="text-center mb-3">
-                        <i class="fas fa-user-shield fa-3x text-primary mb-3"></i>
+                        <!-- Ícone customizado -->
+                        <img src="{{ "img/icone-civel.png" | relURL }}" alt="Direito Cível" style="height: 60px; width: auto; margin-bottom: 1rem;">
                         <h4 class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.1rem; color: #141313;">Direito Cível</h4>
                     </div>
                     <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem;">
                         Gestão de conflitos, contratos e proteção de direitos civis.
                     </p>
 
-                    <!-- Conteúdo Oculto -->
                     <div class="collapse flex-grow-1" id="collapseCivel">
                         <div class="pt-3 mt-2" style="border-top: 1px solid rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.85rem; line-height: 1.6; text-align: justify;">
                             Possuímos vasta experiência na condução de demandas envolvendo responsabilidade civil, elaboração e análise minuciosa de contratos, execuções, cumprimento de sentenças e negociações extrajudiciais focadas na prevenção de litígios.
                         </div>
                     </div>
 
-                    <!-- Botão de Expansão -->
                     <button class="btn btn-outline-dark mt-auto w-100 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCivel" aria-expanded="false" aria-controls="collapseCivel" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
                         Saiba Mais <i class="fas fa-plus ms-1" style="font-size: 0.7rem;"></i>
                     </button>
@@ -171,21 +171,20 @@
             <div class="col-md-6 col-lg-4">
                 <div class="practice-item bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 5px solid #947B18;">
                     <div class="text-center mb-3">
-                        <i class="fas fa-briefcase fa-3x text-primary mb-3"></i>
+                        <!-- Ícone customizado -->
+                        <img src="{{ "img/icone-empresarial.png" | relURL }}" alt="Direito Empresarial" style="height: 60px; width: auto; margin-bottom: 1rem;">
                         <h4 class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.1rem; color: #141313;">Direito Empresarial</h4>
                     </div>
                     <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem;">
                         Assessoria corporativa para segurança e crescimento do seu negócio.
                     </p>
 
-                    <!-- Conteúdo Oculto -->
                     <div class="collapse flex-grow-1" id="collapseEmpresarial">
                         <div class="pt-3 mt-2" style="border-top: 1px solid rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.85rem; line-height: 1.6; text-align: justify;">
                             Consultoria jurídica empresarial, planejamento societário, fusões e aquisições, além da estruturação de estratégias para mitigação de riscos jurídicos corporativos e atuação firme em contencioso empresarial de alta complexidade.
                         </div>
                     </div>
 
-                    <!-- Botão de Expansão -->
                     <button class="btn btn-outline-dark mt-auto w-100 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmpresarial" aria-expanded="false" aria-controls="collapseEmpresarial" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
                         Saiba Mais <i class="fas fa-plus ms-1" style="font-size: 0.7rem;"></i>
                     </button>
@@ -196,21 +195,20 @@
             <div class="col-md-6 col-lg-4">
                 <div class="practice-item bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 5px solid #947B18;">
                     <div class="text-center mb-3">
-                        <i class="fas fa-file-contract fa-3x text-primary mb-3"></i>
+                        <!-- Ícone customizado -->
+                        <img src="{{ "img/icone-trabalhista.png" | relURL }}" alt="Direito Trabalhista" style="height: 60px; width: auto; margin-bottom: 1rem;">
                         <h4 class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.1rem; color: #141313;">Direito Trabalhista</h4>
                     </div>
                     <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem;">
                         Defesa estruturada e consultoria preventiva em relações de trabalho.
                     </p>
 
-                    <!-- Conteúdo Oculto -->
                     <div class="collapse flex-grow-1" id="collapseTrabalhista">
                         <div class="pt-3 mt-2" style="border-top: 1px solid rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.85rem; line-height: 1.6; text-align: justify;">
                             Atuação direta na defesa de passivos trabalhistas, auditorias de conformidade (compliance trabalhista) e desenvolvimento de políticas internas para evitar multas, litígios e garantir um ambiente de trabalho legalmente seguro.
                         </div>
                     </div>
 
-                    <!-- Botão de Expansão -->
                     <button class="btn btn-outline-dark mt-auto w-100 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrabalhista" aria-expanded="false" aria-controls="collapseTrabalhista" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
                         Saiba Mais <i class="fas fa-plus ms-1" style="font-size: 0.7rem;"></i>
                     </button>
@@ -221,21 +219,20 @@
             <div class="col-md-6 col-lg-4">
                 <div class="practice-item bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 5px solid #947B18;">
                     <div class="text-center mb-3">
-                        <i class="fas fa-hands-helping fa-3x text-primary mb-3"></i>
+                        <!-- Ícone customizado -->
+                        <img src="{{ "img/icone-previdenciario.png" | relURL }}" alt="Direito Previdenciário" style="height: 60px; width: auto; margin-bottom: 1rem;">
                         <h4 class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.1rem; color: #141313;">Direito Previdenciário</h4>
                     </div>
                     <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem;">
                         Planejamento e resolução de entraves para a garantia de benefícios.
                     </p>
 
-                    <!-- Conteúdo Oculto -->
                     <div class="collapse flex-grow-1" id="collapsePrevi">
                         <div class="pt-3 mt-2" style="border-top: 1px solid rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.85rem; line-height: 1.6; text-align: justify;">
                             Planejamento previdenciário estratégico, averbação de tempos especiais, concessão e revisão de benefícios junto ao INSS. Atuamos administrativamente e judicialmente para assegurar o amparo social devido a nossos clientes.
                         </div>
                     </div>
 
-                    <!-- Botão de Expansão -->
                     <button class="btn btn-outline-dark mt-auto w-100 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrevi" aria-expanded="false" aria-controls="collapsePrevi" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
                         Saiba Mais <i class="fas fa-plus ms-1" style="font-size: 0.7rem;"></i>
                     </button>
@@ -246,21 +243,20 @@
             <div class="col-md-6 col-lg-4">
                 <div class="practice-item bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 5px solid #947B18;">
                     <div class="text-center mb-3">
-                        <i class="fas fa-coins fa-3x text-primary mb-3"></i>
+                        <!-- Ícone customizado -->
+                        <img src="{{ "img/icone-tributario.png" | relURL }}" alt="Direito Tributário" style="height: 60px; width: auto; margin-bottom: 1rem;">
                         <h4 class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.1rem; color: #141313;">Direito Tributário</h4>
                     </div>
                     <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem;">
                         Otimização fiscal, defesas e recuperação de créditos.
                     </p>
 
-                    <!-- Conteúdo Oculto -->
                     <div class="collapse flex-grow-1" id="collapseTrib">
                         <div class="pt-3 mt-2" style="border-top: 1px solid rgba(0,0,0,0.1); font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.85rem; line-height: 1.6; text-align: justify;">
                             Inteligência fiscal focada na redução legal da carga tributária. Realizamos defesas em execuções fiscais, processos administrativos e ações para reconhecimento de isenções, garantindo eficiência econômica.
                         </div>
                     </div>
 
-                    <!-- Botão de Expansão -->
                     <button class="btn btn-outline-dark mt-auto w-100 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrib" aria-expanded="false" aria-controls="collapseTrib" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
                         Saiba Mais <i class="fas fa-plus ms-1" style="font-size: 0.7rem;"></i>
                     </button>
@@ -273,7 +269,6 @@
 <!-- Practice End -->
 
 <!--- Contact Email Start --> 
-
 <div class="container-fluid py-5" id="contact" style="background-color: #141313;">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
@@ -289,9 +284,9 @@
                 </p>
                 
                 <!-- Informações de Contato Rápidas -->
-                <div class="d-flex align-items-center mb-3">
-                    <div class="d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border-radius: 50%; background-color: #947B18;">
-                        <i class="fab fa-whatsapp text-white fs-4"></i>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; background-color: #947B18; flex-shrink: 0;">
+                        <img src="{{ "img/whatsapp.png" | relURL }}" alt="WhatsApp" style="width: 24px; height: auto;">
                     </div>
                     <div class="ms-3">
                         <h5 class="text-white mb-0" style="font-family: 'Montserrat', sans-serif; font-size: 1rem;">WhatsApp</h5>
@@ -299,8 +294,8 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
-                    <div class="d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; border-radius: 50%; background-color: #947B18;">
-                        <i class="fas fa-envelope text-white fs-4"></i>
+                    <div class="d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; background-color: #947B18; flex-shrink: 0;">
+                        <img src="{{ "img/email.png" | relURL }}" alt="E-mail" style="width: 24px; height: auto;">
                     </div>
                     <div class="ms-3">
                         <h5 class="text-white mb-0" style="font-family: 'Montserrat', sans-serif; font-size: 1rem;">E-mail</h5>
@@ -313,7 +308,6 @@
             <div class="col-lg-6">
                 <div class="bg-white p-5 shadow-sm" style="border-top: 5px solid #947B18;">
                     
-                    <!-- Substitua o LINK_DO_FORMSPREE abaixo pelo link gerado na sua conta -->
                     <form action="LINK_DO_FORMSPREE" method="POST">
                         <div class="row g-3">
                             <div class="col-sm-6">
@@ -342,6 +336,6 @@
         </div>
     </div>
 </div>
-<!-- Contact Email End --> 
+<!-- Contact Email End -->
 
 {{ end }}

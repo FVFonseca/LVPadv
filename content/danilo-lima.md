@@ -5,7 +5,7 @@ draft: false
 role: "Responsável pela Área Cível"
 specialization: "Direito Civil e Processo Civil"
 email: "danilo@lvp.com.br"
-whatsapp: "5584999999999"
+whatsapp: "558496044669"
 image_carousel: "img/danilo1.jpeg"
 image_profile: "img/danilo2.jpeg"
 
