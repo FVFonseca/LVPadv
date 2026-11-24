@@ -422,3 +422,23 @@ hr.accent-line {
     width: 60px;
     opacity: 1;
 }
+
+/* Estilo customizado do FAQ (substitui o azul padrão do Bootstrap) */
+#faqAccordion .accordion-button {
+    background-color: #ffffff;
+    color: #141313;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+    background-color: #947B18;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+#faqAccordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#faqAccordion .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}

@@ -4,7 +4,7 @@ title = 'Lima, Vieira & Picinin'
 [menu]
   [[menu.main]]
     identifier = "Menu"
-    name = "Menu"
+    name = "Início"
     url = "/"
     weight = 10
 
