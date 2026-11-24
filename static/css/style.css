@@ -447,3 +447,9 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
+
+.hero-section {
+    position: relative;
+    background: url('../img/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
