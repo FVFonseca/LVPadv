@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="container py-5" style="margin-top: 100px;">
+    <div class="text-center mx-auto mb-5" style="max-width: 650px;">
+        <h1 class="mb-3" style="color: #141313; font-family: 'Krona One', sans-serif;">{{ .Title }}</h1>
+        <hr class="mx-auto" style="border-top: 3px solid #947B18; width: 80px; opacity: 1;">
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        {{ range .Pages }}
+        <div class="col-md-6 col-lg-4">
+            <div class="bg-white h-100 p-4 shadow-sm d-flex flex-column" style="border-bottom: 4px solid #947B18;">
+                <h4 class="mb-3" style="font-family: 'Krona One', sans-serif; font-size: 1.05rem; color: #141313;">
+                    {{ .Title }}
+                </h4>
+                <p class="mb-4" style="font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.9rem; color: #555;">
+                    {{ .Summary | truncate 140 }}
+                </p>
+                <a href="{{ .RelPermalink }}" class="btn btn-outline-dark mt-auto py-2" style="border-radius: 0; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem;">
+                    Ler mais <i class="fas fa-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+        {{ else }}
+        <p class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 300;">
+            Nenhum conteúdo publicado no momento.
+        </p>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

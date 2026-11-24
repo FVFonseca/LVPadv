@@ -442,3 +442,8 @@ hr.accent-line {
 #faqAccordion .accordion-button:not(.collapsed)::after {
     filter: brightness(0) invert(1);
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
